@@ -5,7 +5,8 @@ Course Code:
   - "[[CSC263]]"
 aliases: [Las Vegas algorithm, Monte Carlo algorithm, randomized algorithms]
 Week: 12
-Module: 
+Module:
+  - "[[5 - Randomized Algorithms]]"
 Lecture:
   - "23"
   - "24"
@@ -13,7 +14,7 @@ Chapter:
 Slides/Notes: 
 Date: 2025-04-01
 Date created: Tue., Mar. 25, 2025, 2:59:20 am
-Date modified: Tue., Apr. 15, 2025, 4:10:54 pm
+Date modified: Tue., Apr. 15, 2025, 4:17:04 pm
 ---
 
 # Quicksort
