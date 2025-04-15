@@ -1,0 +1,242 @@
+{
+  "main": {
+    "id": "af53d9cb667db12d",
+    "type": "split",
+    "children": [
+      {
+        "id": "5a43e754e376cbef",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "939e09aee15b53e5",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "rachel.html.md",
+                "mode": "preview",
+                "source": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "rachel.html"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a8174d10f98af210",
+    "type": "split",
+    "children": [
+      {
+        "id": "67c5bdb094e57fdf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3f0e8eb3c482e630",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "62f972a153e1ef70",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "d42415aaf6fe83f1",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "68ba3a215b91c56f",
+    "type": "split",
+    "children": [
+      {
+        "id": "28f9b741c9183e7c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2ba808424ee89eee",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "rachel.html.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for rachel.html"
+            }
+          },
+          {
+            "id": "a7d3f1f05a09a786",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "a8173f2fb7f10f5a",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "efcde80b5a769bcd",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "rachel.html.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of rachel.html"
+            }
+          },
+          {
+            "id": "a7c0efba07278a39",
+            "type": "leaf",
+            "state": {
+              "type": "Saved Queries View",
+              "state": {},
+              "icon": "feather-mouse-pointer",
+              "title": "Saved Queries"
+            }
+          },
+          {
+            "id": "8c79d31794cd54e7",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 304.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false,
+      "workspaces:Manage workspace layouts": false,
+      "callout-manager:Insert Callout": false,
+      "homepage:Open homepage": false,
+      "iconic:Open rulebook": false,
+      "pdf-plus:PDF++: Toggle auto-copy": false,
+      "pdf-plus:PDF++: Toggle auto-focus": false,
+      "pdf-plus:PDF++: Toggle auto-paste": false,
+      "obsidian42-brat:BRAT": false,
+      "obsidian-focus-mode:Toggle Focus Mode (Shift + Click to show active pane only)": false
+    }
+  },
+  "active": "939e09aee15b53e5",
+  "lastOpenFiles": [
+    "100 Academia/CSC258/6 Processors/Multiplication.md",
+    "100 Academia/CSC263/CSC263.md",
+    "100 Academia/CSC263/8 Disjoint Sets/Quicksort.md",
+    "100 Academia/CSC263/5 Randomized Algorithms/Quicksort.md",
+    "100 Academia/CSC263/5 Randomized Algorithms",
+    "100 Academia/CSC263/untitled folder",
+    "rachel.html.md",
+    "100 Academia/CSC258/CSC258.md",
+    "900 Archive/Y2 Fall 24/STA237/02 Conditional Probability and Independence/Week 3 - Conditional Probability and Independence.md",
+    "900 Archive/Y2 Fall 24/STA237/02 Conditional Probability and Independence/Independence and Dependence.md",
+    "900 Archive/Y2 Fall 24/STA237/02 Conditional Probability and Independence/Conditional Probability.md",
+    "900 Archive/Y2 Fall 24/STA237/02 Conditional Probability and Independence/Bayes’ Rule and Inverting a Conditional Probability.md",
+    "900 Archive/Y2 Fall 24/STA237/02 Conditional Probability and Independence/2 - Conditional Probability & Independence.md",
+    "900 Archive/Y2 Fall 24/STA237/02 Conditional Probability and Independence",
+    "900 Archive/Y2 Fall 24/STA237/00 Introduction/Week 1 - Course Introduction, Outcomes, Events, and Probabilities.md",
+    "900 Archive/Y2 Fall 24/STA237/00 Introduction/Randomness.md",
+    "900 Archive/Y2 Fall 24/STA237/00 Introduction/Probability.md",
+    "900 Archive/Y2 Fall 24/STA237/00 Introduction/0 - Introduction.md",
+    "900 Archive/Y2 Fall 24/STA237/00 Introduction",
+    "900 Archive/Y2 Fall 24/STA237/Midterm Study Guide.md",
+    "900 Archive/Y2 Fall 24/STA237/03 Discrete Random Variables/Week 6 - More Discrete RVs & Intro to Continuous RVs.md",
+    "900 Archive/Y2 Fall 24/STA237/03 Discrete Random Variables/Week 5 - More Discrete Random Variables.md",
+    "900 Archive/Y2 Fall 24/STA237/03 Discrete Random Variables/Week 4 - Discrete Random Variables.md",
+    "900 Archive/Y2 Fall 24/STA237/03 Discrete Random Variables/The Bernoulli and Binomial Distributions.md",
+    "900 Archive/Y2 Fall 24/STA237/03 Discrete Random Variables/Sampling With Vs Without Replacement.md",
+    "900 Archive/Y2 Fall 24/STA237/03 Discrete Random Variables/Random Variables.md",
+    "900 Archive/Y2 Fall 24/STA237/03 Discrete Random Variables/Random Variables in R.md",
+    "900 Archive/Y2 Fall 24/STA237/03 Discrete Random Variables/Probability Mass Function.md",
+    "900 Archive/Y2 Fall 24/STA237/03 Discrete Random Variables/Poisson Distribution.md",
+    "900 Archive/Y2 Fall 24/STA237/03 Discrete Random Variables/Negative Binomial Distribution.md",
+    "900 Archive/Y2 Fall 24/STA237/03 Discrete Random Variables",
+    "900 Archive/Y2 Fall 24/STA237/Files/W3-2.pdf",
+    "900 Archive/Y2 Fall 24/STA237/Files/W3-1.pdf",
+    "900 Archive/Y2 Fall 24/STA237/Files/W2-1.pdf",
+    "900 Archive/Y2 Fall 24/STA237/Files/W1-1.pdf",
+    "900 Archive/Y2 Fall 24/STA237/Files"
+  ]
+}

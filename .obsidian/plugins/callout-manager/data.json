@@ -1,0 +1,95 @@
+{
+  "callouts": {
+    "custom": [
+      "course-info",
+      "def",
+      "thm",
+      "habits",
+      "heart",
+      "obs",
+      "goal",
+      "idea",
+      "impl",
+      "tl;dr"
+    ],
+    "settings": {
+      "course-info": [
+        {
+          "changes": {
+            "icon": "lucide-graduation-cap",
+            "color": "229, 202, 242"
+          }
+        }
+      ],
+      "impl": [
+        {
+          "changes": {
+            "icon": "lucide-wrench",
+            "color": "255, 189, 189"
+          }
+        }
+      ],
+      "def": [
+        {
+          "changes": {
+            "icon": "lucide-bookmark",
+            "color": "191, 232, 191"
+          }
+        }
+      ],
+      "thm": [
+        {
+          "changes": {
+            "icon": "lucide-arrow-down-right",
+            "color": "255, 218, 117"
+          }
+        }
+      ],
+      "habits": [
+        {
+          "changes": {
+            "icon": "lucide-atom",
+            "color": "255, 179, 71"
+          }
+        }
+      ],
+      "goal": [
+        {
+          "changes": {
+            "icon": "lucide-goal",
+            "color": "255, 163, 102"
+          }
+        }
+      ],
+      "heart": [
+        {
+          "changes": {
+            "icon": "lucide-heart",
+            "color": "236, 147, 147"
+          }
+        }
+      ],
+      "idea": [
+        {
+          "changes": {
+            "icon": "lucide-message-circle-heart",
+            "color": "184, 221, 234"
+          }
+        }
+      ],
+      "obs": [
+        {
+          "changes": {
+            "icon": "lucide-glasses",
+            "color": "235, 204, 255"
+          }
+        }
+      ]
+    }
+  },
+  "calloutDetection": {
+    "obsidian": true,
+    "theme": true,
+    "snippet": true
+  }
+}

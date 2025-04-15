@@ -1,0 +1,126 @@
+.theme-dark {
+    --text-highlight-bg-rgb: 248, 197, 46; /* Darker Yellow */
+    --rose-pine-love: 235, 111, 146;
+    --rose-pine-iris: 196, 167, 231;
+    --rose-pine-foam: 156, 207, 216;
+    --rose-pine-highlight-opacity: 0.2;
+}
+
+.theme-light {
+    --text-highlight-bg-rgb: 248, 197, 46; /* Lighter Yellow */
+    --rose-pine-love: 180, 100, 123;
+    --rose-pine-iris: 144, 122, 169;
+    --rose-pine-foam: 86, 148, 159;
+    --rose-pine-highlight-opacity: 0.2;
+}
+
+body {
+    /* ────────── Multi-colored Highlights ────────── */
+    /* Highlight */
+    --bold-highlight-color: var(--rose-pine-love);
+    --bold-highlight-bg: var(--rose-pine-love);
+
+    --italic-highlight-color: var(--rose-pine-iris);
+    --italic-highlight-bg: var(--rose-pine-iris);
+
+    --bold-italic-highlight-color: var(--rose-pine-foam);
+    --bold-italic-highlight-bg: var(--rose-pine-foam);
+
+    /* —————————— Ulysses Highlight —————————— */
+
+    /* Ulysses highlight color and styling */
+    --text-highlight-border-width: 0.5px;
+    --text-highlight-border-opacity: 1;
+    --text-highlight-text-opacity: 1;
+    --text-highlight-border-radius: var(--radius-s);
+    --text-highlight-padding-block: var(--size-2-1);
+    --text-highlight-padding-inline: var(--size-2-2);
+
+    /* ────────── Bold Highlight ────────── */
+    .cm-highlight.cm-strong,
+    .markdown-rendered strong mark {
+        color: rgb(var(--bold-highlight-color));
+        --text-highlight-bg-rgb: var(--bold-highlight-bg);
+        border-color: rgb(var(--bold-highlight-bg)) !important;
+    }
+
+    /* ────────── Italic Highlight ────────── */
+    .cm-highlight.cm-em,
+    .markdown-rendered em mark {
+        color: rgb(var(--italic-highlight-color));
+        --text-highlight-bg-rgb: var(--italic-highlight-bg);
+        border-color: rgb(var(--italic-highlight-bg)) !important;
+    }
+
+    /* ────────── Bold Italic Highlight ────────── */
+    .cm-highlight.cm-em.cm-strong,
+    .markdown-rendered em > mark > strong,
+    .markdown-rendered strong > mark > em,
+    .markdown-rendered strong > em > mark {
+        color: rgb(var(--bold-italic-highlight-color));
+        --text-highlight-bg-rgb: var(--bold-italic-highlight-bg);
+        border-color: rgb(var(--bold-italic-highlight-bg)) !important;
+    }
+
+    strong em,
+    em strong,
+    .cm-em.cm-strong {
+        color: rgb(var(--rose-pine-foam));
+    }
+}
+
+/* source mode */
+.cm-s-obsidian:not(.is-live-preview) {
+    /* top and bottom */
+    span.cm-highlight {
+        border-block: var(--text-highlight-border-width) solid
+            rgba(
+                var(--text-highlight-bg-rgb),
+                var(--text-highlight-border-opacity)
+            );
+        padding-block: var(--text-highlight-padding-block);
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+        background-color: rgba(var(--text-highlight-bg-rgb), 0.2);
+    }
+    /* start of the highlight (first formatting ==) */
+    :not(.cm-highlight:not(.cm-formatting-highlight))
+        + span.cm-formatting-highlight,
+    span.cm-formatting-highlight:first-child {
+        border-top-left-radius: var(--text-highlight-border-radius);
+        border-bottom-left-radius: var(--text-highlight-border-radius);
+        border-left: var(--text-highlight-border-width) solid
+            rgba(
+                var(--text-highlight-bg-rgb),
+                var(--text-highlight-border-opacity)
+            );
+        padding-left: var(--text-highlight-padding-inline);
+        background-color: rgba(var(--text-highlight-bg-rgb), 0.2);
+    }
+    /* end of the highlight (last formatting ==) */
+    .cm-highlight:not(.cm-formatting-highlight) + span.cm-formatting-highlight,
+    span.cm-highlight:last-child {
+        border-top-right-radius: var(--text-highlight-border-radius);
+        border-bottom-right-radius: var(--text-highlight-border-radius);
+        border-right: var(--text-highlight-border-width) solid
+            rgba(
+                var(--text-highlight-bg-rgb),
+                var(--text-highlight-border-opacity)
+            );
+        padding-right: var(--text-highlight-padding-inline);
+        background-color: rgba(var(--text-highlight-bg-rgb), 0.2);
+    }
+}
+
+/* live preview and preview */
+.cm-s-obsidian.is-live-preview span.cm-highlight,
+.markdown-rendered mark {
+    border-radius: var(--text-highlight-border-radius);
+    border: var(--text-highlight-border-width) solid
+        rgba(var(--text-highlight-bg-rgb), var(--text-highlight-border-opacity));
+    padding: var(--text-highlight-padding-block)
+        var(--text-highlight-padding-inline);
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    background-color: rgba(var(--text-highlight-bg-rgb), 0.2);
+}

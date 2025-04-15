@@ -1,0 +1,20 @@
+{
+  "baseFontSize": 16,
+  "cssTheme": "Minimal",
+  "theme": "moonstone",
+  "enabledCssSnippets": [
+    "dashboard",
+    "dashboard-ReadLineLength",
+    "snippets",
+    "text",
+    "Text Styles",
+    "coloured-highlights",
+    "Primary-Theme Callouts"
+  ],
+  "translucency": false,
+  "accentColor": "",
+  "monospaceFontFamily": "JetBrains Mono",
+  "showViewHeader": true,
+  "interfaceFontFamily": "SF Pro",
+  "textFontFamily": ""
+}

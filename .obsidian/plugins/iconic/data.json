@@ -1,0 +1,122 @@
+{
+  "biggerIcons": "mobile",
+  "clickableIcons": "desktop",
+  "showAllFileIcons": false,
+  "showAllFolderIcons": false,
+  "minimalFolderIcons": false,
+  "showItemName": "desktop",
+  "biggerSearchResults": "mobile",
+  "maxSearchResults": 50,
+  "colorPicker1": "list",
+  "colorPicker2": "rgb",
+  "uncolorHover": false,
+  "uncolorDrag": false,
+  "uncolorSelect": false,
+  "uncolorQuick": false,
+  "rememberDeletedItems": false,
+  "dialogState": {
+    "iconMode": true,
+    "emojiMode": false,
+    "rulePage": "file"
+  },
+  "appIcons": {},
+  "tabIcons": {},
+  "fileIcons": {},
+  "bookmarkIcons": {},
+  "tagIcons": {},
+  "propertyIcons": {},
+  "ribbonIcons": {},
+  "fileRules": [
+    {
+      "id": "47Uyg",
+      "name": "CSC258 Notes",
+      "match": "all",
+      "conditions": [
+        {
+          "source": "path",
+          "operator": "contains",
+          "value": "CSC258"
+        },
+        {
+          "source": "extension",
+          "operator": "contains",
+          "value": "md"
+        }
+      ],
+      "enabled": true,
+      "icon": "lucide-cloud-lightning"
+    },
+    {
+      "id": "NXC8L",
+      "name": "CS Notes",
+      "match": "all",
+      "conditions": [
+        {
+          "source": "path",
+          "operator": "contains",
+          "value": "CSC"
+        },
+        {
+          "source": "path",
+          "operator": "contains",
+          "value": "100 Academia"
+        },
+        {
+          "source": "extension",
+          "operator": "contains",
+          "value": "md"
+        }
+      ],
+      "enabled": true,
+      "icon": "lucide-code"
+    },
+    {
+      "id": "zvjGu",
+      "name": "Slides",
+      "match": "all",
+      "conditions": [
+        {
+          "source": "path",
+          "operator": "contains",
+          "value": "Slide"
+        }
+      ],
+      "enabled": true,
+      "icon": "lucide-presentation"
+    },
+    {
+      "id": "XVxMP",
+      "name": "Math Notes",
+      "match": "all",
+      "conditions": [
+        {
+          "source": "path",
+          "operator": "contains",
+          "value": "MAT"
+        },
+        {
+          "source": "extension",
+          "operator": "contains",
+          "value": "md"
+        }
+      ],
+      "enabled": true,
+      "icon": "math-function"
+    },
+    {
+      "id": "RujLA",
+      "name": "Academic Notes",
+      "match": "all",
+      "conditions": [
+        {
+          "source": "path",
+          "operator": "contains",
+          "value": "Academia"
+        }
+      ],
+      "enabled": true,
+      "icon": "lucide-graduation-cap"
+    }
+  ],
+  "folderRules": []
+}

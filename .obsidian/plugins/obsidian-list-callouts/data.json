@@ -1,0 +1,55 @@
+[
+  {
+    "color": "255, 214, 0",
+    "char": "&",
+    "icon": "lucide-star"
+  },
+  {
+    "color": "255, 145, 0",
+    "char": "@",
+    "icon": "lucide-goal"
+  },
+  {
+    "color": "255, 23, 68",
+    "char": "!",
+    "icon": "lucide-alert-circle"
+  },
+  {
+    "color": "124, 77, 255",
+    "char": "~",
+    "icon": "lucide-zap"
+  },
+  {
+    "color": "0, 184, 212",
+    "char": "?",
+    "icon": "question-mark-glyph"
+  },
+  {
+    "color": "0, 200, 83",
+    "char": "^",
+    "icon": "lucide-thumbs-up"
+  },
+  {
+    "color": "158, 158, 158",
+    "char": "%",
+    "icon": "lucide-sticker"
+  },
+  {
+    "char": "$",
+    "color": "176, 146, 226",
+    "icon": "lucide-glasses",
+    "custom": true
+  },
+  {
+    "char": ";",
+    "color": "225, 168, 168",
+    "icon": "lucide-quote",
+    "custom": true
+  },
+  {
+    "char": "€",
+    "color": "140, 206, 232",
+    "icon": "lucide-message-circle-heart",
+    "custom": true
+  }
+]

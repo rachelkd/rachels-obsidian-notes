@@ -1,0 +1,100 @@
+{
+  "collapse-filter": false,
+  "search": "(path:\"100 Academia\" OR path:\"300 University\" OR path:\"800 Literature Notes\") AND -(tag:#course-page OR tag:#module)",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "tag:#course-page  ",
+      "color": {
+        "a": 1,
+        "rgb": 16740464
+      }
+    },
+    {
+      "query": "tag:#module  ",
+      "color": {
+        "a": 1,
+        "rgb": 8811636
+      }
+    },
+    {
+      "query": "file:Week",
+      "color": {
+        "a": 1,
+        "rgb": 8945919
+      }
+    },
+    {
+      "query": "tag:#stats",
+      "color": {
+        "a": 1,
+        "rgb": 12184038
+      }
+    },
+    {
+      "query": "tag:#cs",
+      "color": {
+        "a": 1,
+        "rgb": 9294767
+      }
+    },
+    {
+      "query": "tag:#math  ",
+      "color": {
+        "a": 1,
+        "rgb": 14855120
+      }
+    },
+    {
+      "query": "tag:#ethics",
+      "color": {
+        "a": 1,
+        "rgb": 11305215
+      }
+    },
+    {
+      "query": "path:\"100 Academia\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 12368361
+      }
+    },
+    {
+      "query": "path:\"400 Work\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 15317690
+      }
+    },
+    {
+      "query": "path:\"200 Personal\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 6257765
+      }
+    },
+    {
+      "query": "path:\"300 University\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 9950450
+      }
+    }
+  ],
+  "collapse-display": true,
+  "showArrow": false,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1.00478164975739,
+  "lineSizeMultiplier": 1,
+  "collapse-forces": true,
+  "centerStrength": 0.518713248970312,
+  "repelStrength": 10,
+  "linkStrength": 1,
+  "linkDistance": 250,
+  "scale": 0.1273165505396339,
+  "close": true
+}

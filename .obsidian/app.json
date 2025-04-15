@@ -1,0 +1,32 @@
+{
+  "legacyEditor": false,
+  "livePreview": true,
+  "promptDelete": false,
+  "alwaysUpdateLinks": true,
+  "attachmentFolderPath": "Files",
+  "newFileLocation": "folder",
+  "newFileFolderPath": "000 Notes",
+  "readableLineLength": true,
+  "showLineNumber": false,
+  "spellcheck": true,
+  "autoPairMarkdown": true,
+  "smartIndentList": true,
+  "propertiesInDocument": "visible",
+  "useTab": false,
+  "userIgnoreFilters": [
+    "Templates/",
+    "200 Personal/210 Journal & Daily Notes/"
+  ],
+  "pdfExportSettings": {
+    "includeName": false,
+    "pageSize": "Letter",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 85
+  },
+  "autoPairBrackets": true,
+  "showUnsupportedFiles": true,
+  "strictLineBreaks": false,
+  "uriCallbacks": false,
+  "vimMode": true
+}

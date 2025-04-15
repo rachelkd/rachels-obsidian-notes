@@ -1,0 +1,51 @@
+img[alt*='center'] {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.codeblock-customizer-icon {
+    width: 16px;
+}
+
+/* Add margins for code blocks inside callouts */
+.markdown-source-view.mod-cm6 .cm-embed-block pre.code-styler-pre {
+    margin: 1em 0px;
+}
+
+/* Custom Line Width */
+body {
+    --file-line-width: 64rem !important;
+    --tab-stacked-pane-width: 1000px; /* Optional pane width increase */
+    --list-spacing: 0.2em; /* vertical spacing between list items - default value: 0.075em */
+}
+/* Custom Line Width - fixes custom html elements except dataview plugin which this negatively impacts */
+.markdown-source-view.mod-cm6.is-readable-line-width
+    .cm-embed-block
+    > div:not(.block-language-dataview) {
+    max-width: 100%;
+}
+
+.right-align {
+    text-align: right;
+}
+
+.right-align .katex {
+    display: inline-block;
+}
+
+:root {
+    font-variant-ligatures: none;
+}
+
+.launch-embed iframe {
+    width: 100%; /* default width for desktop */
+    height: 100%; /* default height for desktop */
+    aspect-ratio: 16 / 9; /* aspect ratio for desktop */
+}
+
+.today-tasks iframe {
+    width: 50%; /* default width for desktop */
+    height: 50%; /* default height for desktop */
+    aspect-ratio: 4 / 5; /* aspect ratio for desktop */
+}
