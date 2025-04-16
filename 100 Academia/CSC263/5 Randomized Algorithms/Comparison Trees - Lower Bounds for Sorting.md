@@ -13,7 +13,7 @@ Chapter:
 Slides/Notes: 
 Date: 2025-04-03
 Date created: Tue., Apr. 15, 2025, 4:48:59 pm
-Date modified: Tue., Apr. 15, 2025, 5:43:47 pm
+Date modified: Tue., Apr. 15, 2025, 10:23:57 pm
 ---
 
 # Comparison Trees: Lower Bounds for Sorting
@@ -137,6 +137,113 @@ For a problem $P$, let $C(P)$ be the **best worst-case running time of any algor
 
 Consider the comparison tree above and suppose $A = [3, 5, 8]$.
 
-- ? What is the worst-case number of comparisons?
-- ? What is the expected number of comparisons if we select $x$ uniformly from $\{ 1, \dots, 10 \}$?
-- ? What if we select $x$ uniformly from $\{ 1, \dots, 100 \}$?
+- $ For each input, there is a path through the tree
+
+> [!question]+ What is the worst-case number of comparisons?
+> - & Length of the longest path in the comparison tree
+
+> [!question]+ What is the expected number of comparisons if we select $x$ uniformly from $\{ 1, \dots, 10 \}$?
+> - & Expected depth of the tree
+>
+> ![|600](https://i.imgur.com/IovJoj9.png)
+> $$
+> \text{Average runtime} = 2 \cdot \frac{2}{10} + \frac{8}{10} \cdot 3 = 2.8
+> $$
+
+> [!question]+ What if we select $x$ uniformly from $\{ 1, \dots, 100 \}$?
+> ![](https://i.imgur.com/BAGWdRJ.png)
+> $$
+> \text{Average runtime} = 2 \cdot \frac{92}{100} + 3 \cdot \frac{8}{100}
+> $$
+
+## Information Theory Lower Bounds
+
+- Every binary tree with height $h$ has $\leq 2^{h}$ leaves
+    - & → Every binary tree with $L$ leaves has height $\geq \lceil \log_{2}L \rceil$
+- Every comparison tree that solves a problem $P$ has one leaf for each possible output
+    - & → Every comparison tree for $P$ has height $\geq \lceil \log_{2}m \rceil$ where $m$ is the number of possible outputs
+
+> [!note]- Proofs (not in lecture slides)
+> Every binary tree with height $h$ has $\leq 2^{h}$ leaves.
+>
+> - **Base Case ($h = 0$):** A binary tree of height 0 consists of a single node, which is also a leaf. So, it has 1 leaf. Since $2^0 = 1$, the base case holds.​
+> - **Inductive Step:** Assume that any binary tree of height $k$ has at most $2^k$ leaves. Now, consider a binary tree of height $k+1$. Its subtrees (left and right) can each have a maximum height of $k$. By the inductive hypothesis, each subtree can have at most $2^k$ leaves. Therefore, the total number of leaves in the tree is at most $2^k + 2^k =2(2^{k}) = 2^{k+1}$. This completes the inductive step.
+>
+> If a tree of height $h$ has $L$ leaves, it must satisfy $L \leq 2^{h}$. Then, $\lceil \log_{2}L \rceil \leq h$.
+
+### Applying This to Sorting
+
+- Input:
+    - $A[1\dots n]$
+- Output:
+    - Permutation of $[1, \dots, n]$, indicating position of each element
+
+> [!example]+ Examples
+> - Input: $[6, 100, -1, 4]$
+>     - Output is $[3,4,1,2]$
+> - Input: $[5, 4, 10, 9]$
+>     - Output is $[2,1,4,3]$
+>     - ![|300](https://i.imgur.com/0FBLcbU.png)
+
+- $n!$ possible outputs
+
+> [!question]+ Draw the comparison tree for sorting a 3-element array.
+> - Input: $A[1], A[2], A[3]$
+> - Output: Permutation of $[1, \dots, n]$ indicating position of each element
+>
+> ![|700](https://i.imgur.com/bbtGaWc.png)
+
+> [!question]+ Suppose $A = [5, 3, 8]$. What is the correct output?
+> $$[2,1,3]$$
+> ![|800](https://i.imgur.com/z0PXwSJ.png)
+
+> [!obs]+ Observations
+> - Number of outputs $= n!$
+> - Every comparison tree has height $\geq \log_{2}(n!)$
+> - & Every algorithm that uses *only comparisons* requires at least $\log_{2}(n!)$ comparisons (in the worst-case)
+>     - Since the longest path from root to leaf is at least $\log_{2}(n!)$, and
+>     - $\text{Path length} = \text{number of nodes in the path} - 1 = \text{number of internal nodes} = \text{number of comparisons}$
+>         - Since internal nodes are comparisons and leaves are output
+
+> [!thm]+ Fact
+> $$\log_{2}(n!) = \Theta(n \lg n)$$
+
+$$
+\begin{align}
+\log(n!) & = \log(n \cdot (n - 1) \cdot (n - 2) \cdot \dots \cdot 1) \\
+ & = \log n + \log(n-1) + \log(n - 2) + \dots + \log(1) \\
+\end{align}
+$$
+$$\implies \frac{n}{2} \log\left( \frac{n}{2} \right)< \log(n!) < n\log n$$
+
+> [!important]+ Conclusion
+> Therefore, every algorithm that uses only comparisons between pairs of elements to sort requires at least $\Theta(n \log n)$.
+
+## What about other Sorts?
+
+- ? Radix sort or counting sort?
+    - Can be done in less than $\mathcal{O}(n\log n)$ comparisons because they ==work on restricted problem==
+- ! Be careful when lower bounds apply only to algorithms of a particular type
+- ! Be careful when we are using a restricted problem
+    - Sorting $n$ distinct numbers from 1 to $n$
+    - Sorting $n - 1$ distinct numbers from 1 to $n$
+
+## Problem Information Complexity
+
+Given problem $P$:
+
+- $P$ is in worst-case of $f(n)$ if:
+    - There exists an algorithm $A$ such that for every input $x$ of length $n$:
+        - $A(x) \in \mathcal{O}(f(n))$, and
+        - Every other algorithm $A'$ is same or worse runtime
+- $P$ has lower-bound of $g(n)$ if:
+    - For every algorithm $A$, there is an input $x$ of length $n$ such that:
+        - $A(x) \in \Omega(g(n))$
+
+> [!info]+ Sorting
+> $$f(n) = g(n) = n \log n$$
+
+> [!note]+ So what should we do with known impossibility results?
+> - Stop trying
+> - Recognize these are for general problems
+> - A lot of real problems are specific, so very good “partial” solutions can exist and be useful
