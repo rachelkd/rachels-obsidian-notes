@@ -17,7 +17,7 @@ Slides/Notes:
   - https://share.goodnotes.com/s/IkjmCCOCfCz4E68WbRU3Ne
 Date: 2025-01-21
 Date created: Tue., Jan. 21, 2025, 2:18:43 pm
-Date modified: Wed., Mar. 5, 2025, 5:35:22 pm
+Date modified: Wed., Apr. 16, 2025, 8:20:17 pm
 ---
 
 # Dictionaries and AVL Trees
@@ -181,7 +181,7 @@ def Delete(D, key):
     - → Upper bound on the worst-case running time of each of these algorithms is $\mathcal{O}(h)$
         - (Can show that bound is tight)
 - A binary tree of height $h$ can have:
-    - $h$ to $2^{h} - 1$ nodes
+    - $h$ to $2^{h+1} - 1$ nodes
     - → A tree of $n$ nodes can have height $n$
     - → Worst-case running time of $\mathcal{O}(n)$ for all three algorithms
         - (Can show that bound is tight)

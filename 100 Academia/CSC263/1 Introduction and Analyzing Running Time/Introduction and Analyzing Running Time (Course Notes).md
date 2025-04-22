@@ -14,7 +14,7 @@ Slides/Notes:
   - "[[Algorithm Analysis]]"
 Date: 2025-01-09
 Date created: Sat., Jan. 11, 2025, 3:32:18 pm
-Date modified: Tue., Apr. 15, 2025, 3:50:14 pm
+Date modified: Wed., Apr. 16, 2025, 5:27:21 pm
 ---
 
 # Introduction and Analyzing Running Time
@@ -177,7 +177,7 @@ def evens_are_bad(lst):
     - Initial check on line 2 takes $\Omega(n)$ time
         - Checking if every number is even
     - Computation in the `if` branch takes $\Omega(n^{2})$ time
-        - Each number is accessed $n$ times, once per time the  per time the sum is computed
+        - Each number is accessed $n$ times, once per time the sum is computed
     - → Worst-case running time of algorithm is $\Omega(n^{2})$
     - Prove the matching upper bound → Worst case running time of algorithm is $\Theta(n^{2})$
 

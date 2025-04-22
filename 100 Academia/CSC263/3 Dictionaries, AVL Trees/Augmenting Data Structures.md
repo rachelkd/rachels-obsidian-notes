@@ -15,7 +15,7 @@ Slides/Notes:
   - https://share.goodnotes.com/s/vk7Ek3weUGTUoAbt9uIbs9
 Date: 2025-02-04
 Date created: Thu., Feb. 6, 2025, 2:00:31 pm
-Date modified: Thu., Mar. 6, 2025, 4:30:09 am
+Date modified: Thu., Apr. 17, 2025, 4:43:16 am
 ---
 
 # Augmenting Data Structures
@@ -133,7 +133,7 @@ New Operations:
 ### Pseudocode
 
 ```pseudocode
-SELECT(T, k):
+SELECT(T, r):
     if T.left != NULL:
         local_rank = T.left.size + 1
     else:

@@ -11,11 +11,11 @@ Lecture:
   - "58"
   - "59"
   - "60"
-Chapter: "21.1"
+Chapter: "21.3"
 Slides/Notes: 
 Date: 2025-03-10
 Date created: Wed., Apr. 9, 2025, 2:09:38 pm
-Date modified: Thu., Apr. 10, 2025, 4:14:03 am
+Date modified: Sun., Apr. 20, 2025, 5:30:22 pm
 ---
 
 # Flux Integrals Over Parameterized Surfaces

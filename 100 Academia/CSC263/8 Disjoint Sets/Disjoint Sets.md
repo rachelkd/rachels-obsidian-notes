@@ -14,7 +14,7 @@ Chapter:
 Slides/Notes:
 Date: 2025-03-25
 Date created: Tue., Mar. 25, 2025, 2:59:20 am
-Date modified: Wed., Apr. 2, 2025, 7:40:22 pm
+Date modified: Wed., Apr. 16, 2025, 4:54:24 am
 ---
 
 # Disjoint Sets
@@ -159,7 +159,7 @@ Consider a *bad* sequence of length $m$:
 - $\frac{m}{2} + 1$ `Find-Set`
 
 <!-- break -->
-- Sequence length is $\frac{m}{4} + \left( \frac{m}{4} - 1 \right) + \left( \frac{m}{4} + 1 \right)$
+- Sequence length is $\frac{m}{4} + \left( \frac{m}{4} - 1 \right) + \left( \frac{m}{2} + 1 \right)$
 - Time for $\frac{m}{4}$ `Make-Set`s
     - $\frac{m}{4}$ since $\Theta(1)$
 - After $\frac{m}{4}$ `Make-Set`s and $\frac{m}{4} - 1$ `Union`s:
